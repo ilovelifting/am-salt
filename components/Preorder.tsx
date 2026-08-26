@@ -30,7 +30,7 @@ export function Preorder({ initialCount }: { initialCount: number }) {
       <div className={styles.card}>
         <div className={styles.priceRow}>
           <div className={styles.price}>{priceLabel}</div>
-          <div className={styles.priceUnit}>/ 30 STICKS (EST.)</div>
+          <div className={styles.priceUnit}>/ 30 STICKS</div>
         </div>
         <div className={styles.perDay}>{perDay} PER MORNING</div>
 
@@ -87,8 +87,8 @@ export function Preorder({ initialCount }: { initialCount: number }) {
         )}
 
         <div className={styles.fine}>
-          Estimated price at launch: {oneTime}. We&rsquo;re not charging you
-          today. We don&rsquo;t even have a warehouse yet.
+          Estimated price at launch: {oneTime}. Your card is charged only
+          when your box ships.
         </div>
         {count > 0 && (
           <div className={styles.count}>

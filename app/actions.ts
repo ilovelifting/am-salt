@@ -35,7 +35,7 @@ export async function preorderAction(
     status: "success",
     message: alreadyExists
       ? "Already got you. Sit tight."
-      : "You're in. We'll email you before anything ships, charges, or otherwise becomes real.",
+      : "You're in. We'll email you the moment your box is ready to ship.",
     count,
   };
 }
