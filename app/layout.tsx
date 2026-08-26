@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
 import { siteUrl } from "@/lib/site";
+import { OrganizationSchema } from "@/components/seo/OrganizationSchema";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -37,7 +38,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${archivo.variable} ${plexMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <OrganizationSchema />
+        {children}
+      </body>
     </html>
   );
 }

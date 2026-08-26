@@ -1,0 +1,126 @@
+.intro {
+  padding: 100px 48px 64px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.h1 {
+  margin: 0 0 20px;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.body {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 56ch;
+}
+
+.refs {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 24px 0;
+}
+
+.refsLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.refsList {
+  margin: 0;
+  padding: 0 0 0 1.1em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.ctaWrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.productCta {
+  padding: 36px;
+  border: 1px solid var(--ink);
+  background: var(--bg-alt);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.productCtaText p {
+  margin: 6px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 46ch;
+}
+
+.productCtaLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.productCtaButton {
+  flex: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 15px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 2px;
+  white-space: nowrap;
+  transition: background 0.15s ease;
+}
+
+.productCtaButton:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    padding: 56px 24px 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .productCta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productCtaButton {
+    width: 100%;
+    text-align: center;
+  }
+}

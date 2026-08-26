@@ -1,6 +1,12 @@
 import styles from "./Article.module.css";
 
-export function CiteText({ text }: { text: string }) {
+export function CiteText({
+  text,
+  citeClassName,
+}: {
+  text: string;
+  citeClassName?: string;
+}) {
   const parts: React.ReactNode[] = [];
   let lastIndex = 0;
   let key = 0;
@@ -12,7 +18,7 @@ export function CiteText({ text }: { text: string }) {
     }
     const id = match[1];
     parts.push(
-      <sup key={`cite-${key++}`} className={styles.citeMark}>
+      <sup key={`cite-${key++}`} className={citeClassName ?? styles.citeMark}>
         <a href={`#ref-${id}`}>{id}</a>
       </sup>
     );

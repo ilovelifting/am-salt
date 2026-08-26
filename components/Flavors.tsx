@@ -4,7 +4,7 @@ import styles from "./Flavors.module.css";
 
 export function Flavors() {
   return (
-    <section className={styles.section}>
+    <section id="flavors" className={styles.section}>
       <div className={styles.eyebrow}>Two flavors. We stopped there.</div>
       <div className={styles.grid}>
         {flavors.map((f) => (

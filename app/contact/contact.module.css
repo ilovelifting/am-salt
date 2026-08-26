@@ -1,0 +1,103 @@
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 88px 24px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.dek {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.card {
+  background: var(--bg);
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cardValue {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.cardValue a {
+  color: var(--accent);
+}
+
+.cardNote {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+.faqNote {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.faqNote a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.backLink {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 2px;
+  align-self: flex-start;
+}
+
+.backLink:hover {
+  color: var(--accent-hover);
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 56px 20px 80px;
+  }
+}

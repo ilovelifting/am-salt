@@ -4,10 +4,12 @@ import { ScienceStats } from "@/components/ScienceStats";
 import { Process } from "@/components/Process";
 import { Panel } from "@/components/Panel";
 import { Flavors } from "@/components/Flavors";
+import { TrustBar } from "@/components/TrustBar";
 import { Preorder } from "@/components/Preorder";
 import { Faq } from "@/components/Faq";
 import { JournalTeaser } from "@/components/journal/JournalTeaser";
 import { Footer } from "@/components/Footer";
+import { ProductSchema } from "@/components/seo/ProductSchema";
 import { getPreorderCount } from "@/lib/preorders";
 import styles from "./page.module.css";
 
@@ -20,12 +22,14 @@ export default async function Home() {
 
   return (
     <main className={styles.page}>
+      <ProductSchema />
       <Header />
       <Hero />
       <ScienceStats />
       <Process />
       <Panel />
       <Flavors />
+      <TrustBar />
       <Preorder initialCount={preorderCount} />
       <Faq />
       <JournalTeaser />

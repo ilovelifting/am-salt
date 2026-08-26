@@ -20,24 +20,31 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Structure
 
-- `app/page.tsx` — assembles the page from `components/`
+- `app/page.tsx` — assembles the homepage from `components/`
 - `app/actions.ts` — the `preorderAction` Server Action (validates email, rate-limits, writes to the store)
-- `app/not-found.tsx` — branded 404
+- `app/not-found.tsx`, `app/error.tsx` — branded 404 and error boundary
 - `app/journal/page.tsx`, `app/journal/[slug]/page.tsx` — the research blog: an index and per-post pages, rendered from `lib/journal.ts` via `components/journal/`
+- `app/benefits/page.tsx` — cited, mechanism-by-mechanism benefits page, rendered from `lib/benefits.ts` via `components/benefits/`
+- `app/about/page.tsx`, `app/contact/page.tsx` — brand story and support contact
+- `app/{shipping-returns,privacy,terms}/page.tsx` — policy pages, rendered from `lib/policies.ts` via `components/policy/PolicyLayout`
 - `app/{icon,apple-icon,opengraph-image}.tsx` — generated brand assets, no static image files to keep in sync
 - `app/{robots,sitemap}.ts` — SEO file conventions
+- `components/TrustBar.tsx` — the shipping/refund/label trust signals shown above the preorder form
+- `components/seo/{OrganizationSchema,ProductSchema}.tsx` — JSON-LD structured data (site-wide and homepage)
 - `lib/content.ts` — copy for steps/panel/flavors/science-stats/FAQ, plus the citation list
 - `lib/journal.ts` — journal post content and citations, consumed by `app/journal/`
+- `lib/benefits.ts` — benefits copy and citations, consumed by `app/benefits/`
+- `lib/policies.ts` — shipping/privacy/terms copy, consumed by the policy pages
 - `lib/pricing.ts` — price math
 - `lib/preorders.ts` — file-based preorder store (`data/preorders.json`, gitignored)
 - `lib/rate-limit.ts` — in-memory per-IP rate limiter for the preorder action
-- `lib/site.ts` — the site's canonical URL, used for metadata/robots/sitemap
+- `lib/site.ts` — the site's canonical URL and support inbox, used for metadata/robots/sitemap/contact
 
 ## Before this goes fully live
 
 Everything below is a real gap, not hypothetical — read this before pointing real traffic at it.
 
-1. **Set the real domain.** `lib/site.ts` still has a placeholder URL. Update it once you have the actual domain — it feeds `metadataBase` (so OG/Twitter image URLs resolve correctly when shared), `robots.txt`, and `sitemap.xml`.
+1. **Set the real domain and support inbox.** `lib/site.ts` still has a placeholder URL and a placeholder `support@amsalt.example.com` address. Update both before deploying — the URL feeds `metadataBase` (so OG/Twitter image URLs resolve correctly when shared), `robots.txt`, `sitemap.xml`, and the JSON-LD in `components/seo/`; the email is shown directly on `/contact` and in the footer.
 2. **Swap the preorder store if deploying serverless/multi-instance.** `lib/preorders.ts` writes to a JSON file on disk, and `lib/rate-limit.ts` keeps its counters in memory. Both work fine on a single traditional server (a VM, Railway, Render, `npm start` on your own box) but **silently stop working correctly on Vercel or any serverless/multi-instance host** — each request can hit a different instance with no shared state, so preorders can be lost and rate limiting becomes meaningless. Swap both for something shared (Postgres/Supabase/Redis) before deploying anywhere serverless.
 3. **You have no way to see who preordered yet.** Submissions land in `data/preorders.json` on the server's disk. There's no export, no admin view, no email notification when someone signs up. At minimum, wire up an email (Resend/Postmark) or Slack webhook in `preorderAction` so preorders don't just sit silently on a server you have to SSH into.
 4. **The FDA disclaimer and sodium guidance in the FAQ are a starting point, not a legal review.** This makes a real health-adjacent claim (850mg sodium, positioned as a daily habit). Before real launch, have an actual lawyer or regulatory consultant look at the supplement-marketing claims — this codebase handles the responsible-disclosure *content*, not the legal sign-off.
