@@ -21,58 +21,112 @@
 
 .card {
   background: var(--bg);
-  padding: 40px 34px 44px;
+  padding: 40px 34px 36px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  transition: background 0.2s ease;
+}
+
+.card:hover {
+  background: var(--bg-alt);
+}
+
+.reading {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 14px;
 }
 
 .stat {
-  font-size: 68px;
+  font-family: var(--font-mono);
+  font-size: 52px;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
   color: var(--accent);
+  margin: 0 0 18px;
+  font-variant-numeric: tabular-nums;
 }
 
 .refMark {
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: 15px;
   font-weight: 600;
-  margin-left: 2px;
-  top: -0.9em;
+  margin-left: 3px;
+  top: -1.6em;
 }
 
 .body {
   font-size: 17px;
   line-height: 1.5;
   color: var(--ink-soft);
+  margin: 0 0 20px;
 }
 
-.refsLabel {
-  margin: 40px 0 12px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
+.sourceToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  margin-top: auto;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
+  transition: color 0.15s ease;
 }
 
-.refs {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.sourceToggle:hover {
+  color: var(--accent);
+}
+
+.chevron {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.chevron[data-open="true"] {
+  transform: rotate(90deg);
+}
+
+.sourcePanel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+}
+
+.sourcePanel[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+
+.sourceInner {
+  overflow: hidden;
+}
+
+.sourceText {
+  margin: 14px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
   font-size: 13px;
   line-height: 1.6;
   color: var(--muted);
-  max-width: 72ch;
 }
 
-.refs li {
-  margin-left: 1.1em;
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .chevron,
+  .sourcePanel,
+  .sourceToggle {
+    transition: none;
+  }
 }
 
 @media (max-width: 900px) {
