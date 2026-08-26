@@ -21,10 +21,9 @@ export function Preorder({ initialCount }: { initialCount: number }) {
       <div className={styles.intro}>
         <h2 className={styles.h2}>Thirty mornings.</h2>
         <p className={styles.body}>
-          One box, one stick a day. We&rsquo;re taking preorders before we
-          manufacture anything, which is either very lean or very
-          presumptuous. Reserve one and we&rsquo;ll email you before your
-          card is ever charged.
+          One box, one stick a day. Reserve yours and we&rsquo;ll email you
+          before your card is ever charged. That&rsquo;s it, that&rsquo;s
+          the preorder.
         </p>
       </div>
 
