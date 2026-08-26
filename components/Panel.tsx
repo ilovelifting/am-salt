@@ -13,6 +13,11 @@ export function Panel() {
             hide. No proprietary formula. No &ldquo;blend.&rdquo; No
             sweetener pretending to be a flavor.
           </p>
+          <p className={styles.note}>
+            A little glucose speeds absorption &mdash; that&rsquo;s real
+            physiology, not a myth. We left it out anyway. Zero sugar, first
+            thing in the morning, no exceptions.
+          </p>
         </div>
         <div className={styles.rows}>
           {panel.map((row) => (

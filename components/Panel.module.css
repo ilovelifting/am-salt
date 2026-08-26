@@ -41,6 +41,16 @@
   max-width: 42ch;
 }
 
+.note {
+  margin: 0;
+  padding-left: 18px;
+  border-left: 2px solid rgba(247, 247, 245, 0.24);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--navy-dim);
+  max-width: 40ch;
+}
+
 .rows {
   display: flex;
   flex-direction: column;

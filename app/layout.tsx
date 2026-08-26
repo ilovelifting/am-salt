@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -14,8 +15,6 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500", "700"],
 });
 
-const siteUrl = "https://amsalt.example.com";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "AM Salt — Not a wellness blend. Just salt.",
@@ -26,6 +25,12 @@ export const metadata: Metadata = {
     description:
       "Your brain is 73% water. Coffee is 0% water. One packet, sixteen ounces, before anything else.",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AM Salt — Not a wellness blend. Just salt.",
+    description:
+      "Your brain is 73% water. Coffee is 0% water. One packet, sixteen ounces, before anything else.",
   },
 };
 

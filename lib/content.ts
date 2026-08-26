@@ -67,6 +67,33 @@ export const scienceStats: ScienceStat[] = [
   },
 ];
 
+export const faq = [
+  {
+    q: "Why not just drink water?",
+    a: "Water alone doesn't stay in circulation. Without sodium, most of it passes straight through and you're back where you started within the hour — that's the whole first stat on this page.",
+  },
+  {
+    q: "Who should check with a doctor before making this a daily habit?",
+    a: "If you're on blood pressure medication, have kidney disease, are pregnant or nursing, or a doctor has you on a sodium-restricted diet — talk to them first. For most healthy adults, 850mg once a day, first thing in the morning, is unremarkable. But “most people” isn't a guarantee, and we'd rather say this plainly than bury it in fine print.",
+  },
+  {
+    q: "Is 850mg of sodium a lot?",
+    a: "It's a little under a third of the FDA's daily recommended limit, in one serving, first thing in the morning. If the rest of your day looks like a normal diet, that's not unusual for an active adult. If it's not — see the question above.",
+  },
+  {
+    q: "Can I drink this every day?",
+    a: "That's the design. One stick, one morning, not an occasional thing.",
+  },
+  {
+    q: "Does it have caffeine?",
+    a: "No. This is what you drink before coffee, not a caffeine product. Pair it with whatever you already drink.",
+  },
+  {
+    q: "What's actually in it?",
+    a: "Sodium chloride, potassium citrate, magnesium malate, citric acid, natural flavor. That's the whole list — the full panel is above, down to the milligram.",
+  },
+];
+
 export const references = [
   {
     id: 1,

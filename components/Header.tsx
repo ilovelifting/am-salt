@@ -7,6 +7,7 @@ export function Header() {
       <nav className={styles.nav}>
         <a href="#science">The proof</a>
         <a href="#panel">What&rsquo;s actually in it</a>
+        <a href="#faq">FAQ</a>
         <a href="#preorder">Preorder</a>
       </nav>
     </header>

@@ -1,6 +1,8 @@
 "use server";
 
+import { headers } from "next/headers";
 import { addPreorder } from "@/lib/preorders";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { flavors } from "@/lib/content";
 
 export type PreorderState = {
@@ -11,11 +13,26 @@ export type PreorderState = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const VALID_FLAVORS = new Set<string>(flavors.map((f) => f.id));
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 10 * 60 * 1000;
 
 export async function preorderAction(
   _prevState: PreorderState,
   formData: FormData
 ): Promise<PreorderState> {
+  const hdrs = await headers();
+  const ip =
+    hdrs.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+    hdrs.get("x-real-ip") ||
+    "unknown";
+
+  if (!checkRateLimit(`preorder:${ip}`, RATE_LIMIT, RATE_WINDOW_MS)) {
+    return {
+      status: "error",
+      message: "Too many attempts. Try again in a few minutes.",
+    };
+  }
+
   // Honeypot: real visitors never fill this hidden field.
   if (formData.get("company")) {
     return { status: "success", message: "You're in." };
