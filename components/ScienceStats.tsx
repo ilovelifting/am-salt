@@ -4,7 +4,7 @@ import styles from "./ScienceStats.module.css";
 export function ScienceStats() {
   return (
     <section id="science" className={styles.section}>
-      <div className={styles.eyebrow}>Why the first hour matters</div>
+      <div className={styles.eyebrow}>Three numbers. No philosophy.</div>
       <div className={styles.grid}>
         {scienceStats.map((s) => (
           <div className={styles.card} key={s.stat}>
@@ -16,6 +16,7 @@ export function ScienceStats() {
           </div>
         ))}
       </div>
+      <div className={styles.refsLabel}>Sources, for the skeptics</div>
       <ol className={styles.refs}>
         {references.map((r) => (
           <li key={r.id} id={`ref-${r.id}`}>

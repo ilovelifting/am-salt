@@ -6,11 +6,12 @@ export function Panel() {
     <section id="panel" className={styles.section}>
       <div className={styles.grid}>
         <div className={styles.intro}>
-          <div className={styles.eyebrow}>Full panel, one stick</div>
+          <div className={styles.eyebrow}>Everything. On the label.</div>
           <h2 className={styles.h2}>Nothing hidden in a blend.</h2>
           <p className={styles.body}>
-            Every milligram is on the front of the packet. No proprietary
-            formula, no flavor filler, no sweetener.
+            Every milligram is on the label because there&rsquo;s nothing to
+            hide. No proprietary formula. No &ldquo;blend.&rdquo; No
+            sweetener pretending to be a flavor.
           </p>
         </div>
         <div className={styles.rows}>

@@ -6,7 +6,8 @@ export function Footer() {
       <div>AM Salt</div>
       <div className={styles.disclaimer}>
         Statements have not been evaluated by the FDA. This product is not
-        intended to diagnose, treat, cure, or prevent any disease.
+        intended to diagnose, treat, cure, or prevent any disease. It&rsquo;s
+        salt water. Manage expectations accordingly.
       </div>
       <div>© {new Date().getFullYear()}</div>
     </footer>

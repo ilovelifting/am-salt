@@ -1,18 +1,18 @@
 export const steps = [
   {
     n: "01",
-    title: "Wake up. Don’t reach for the kettle.",
-    body: "Fill 16 oz of cold water while the coffee grinder stays off.",
+    title: "Don’t reach for the kettle yet.",
+    body: "Fill 16 oz of cold water. The coffee maker can wait ninety seconds — it's not going anywhere.",
   },
   {
     n: "02",
-    title: "One stick, thirty seconds.",
-    body: "Dissolves clear. Faint citrus, definite salt — it is supposed to taste like that.",
+    title: "One stick. Thirty seconds.",
+    body: "Dissolves clear. Tastes like salt, because it is salt. If you wanted flavor, that's what the coffee is for.",
   },
   {
     n: "03",
     title: "Then coffee.",
-    body: "Ten minutes later, on a system that can actually use it.",
+    body: "Now it actually works, instead of just making you jittery on top of dehydrated.",
   },
 ];
 
@@ -29,7 +29,7 @@ export const flavors = [
     id: "citrus",
     name: "Citrus Salt",
     short: "Citrus",
-    note: "Grapefruit and lemon peel. The everyday one.",
+    note: "Grapefruit, lemon peel, salt. Tastes like you'd expect something with “salt” in the name to taste.",
     bg: "#F7F7F5",
     fg: "#121212",
   },
@@ -37,7 +37,7 @@ export const flavors = [
     id: "blackcurrant",
     name: "Blackcurrant",
     short: "Currant",
-    note: "Darker, slightly tart. Less bright first thing.",
+    note: "Tart, a little moody. For mornings that are also tart and a little moody.",
     bg: "#1F4FD8",
     fg: "#F7F7F5",
   },
@@ -52,17 +52,17 @@ export type ScienceStat = {
 export const scienceStats: ScienceStat[] = [
   {
     stat: "1–2%",
-    body: "Mild dehydration in this range — well within what you can lose overnight — has been shown to measurably impair attention and working memory.",
+    body: "That's how little water loss it takes to measurably slow down your attention span. You lose more than this overnight, every night, for free.",
     refIndex: 1,
   },
   {
     stat: "8 hrs",
-    body: "Since your last drink. At rest, the body loses roughly half a liter overnight through breath and skin alone, with nothing coming in to offset it.",
+    body: "How long you went without a sip of water while unconscious. Your body kept losing it anyway — breathing, skin, no exceptions for being asleep.",
     refIndex: 2,
   },
   {
     stat: "Salt",
-    body: "Water alone moves through the gut faster than it's absorbed. Sodium is what the intestine uses to pull it into circulation and hold it there.",
+    body: "The part that makes water actually absorb instead of running straight through you. Not a superfood. A mineral. It's fine.",
     refIndex: 3,
   },
 ];

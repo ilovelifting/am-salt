@@ -7,26 +7,30 @@ export function Hero() {
       <div className={styles.copy}>
         <div className={styles.eyebrow}>
           <span className={styles.dot} />
-          Electrolytes for the first hour
+          Status: dehydrated
         </div>
-        <h1 className={styles.h1}>Hydrate your brain first.</h1>
+        <h1 className={styles.h1}>
+          Your brain is 73% water.
+          <br />
+          Coffee is 0% water.
+        </h1>
         <p className={styles.lede}>
-          You wake up down a liter of water and short on sodium. That&rsquo;s
-          the fog you&rsquo;re drinking coffee at. One packet, sixteen
-          ounces, before anything else.
+          You didn&rsquo;t wake up tired. You woke up down a liter of water
+          and short on sodium, and called it tired. One packet, sixteen
+          ounces, before you do anything else &mdash; including the coffee.
         </p>
         <div className={styles.ctaRow}>
           <a href="#preorder" className={styles.primaryCta}>
-            Preorder your box
+            Fix the actual problem
           </a>
           <a href="#science" className={styles.secondaryCta}>
-            Read the research
+            See the proof
           </a>
         </div>
         <div className={styles.tags}>
-          <div>NO SUGAR</div>
-          <div>NO STEVIA</div>
-          <div>SODIUM ON THE LABEL</div>
+          <div>NOT A BLEND</div>
+          <div>NOT PROPRIETARY</div>
+          <div>JUST SODIUM</div>
         </div>
       </div>
       <div className={styles.art}>

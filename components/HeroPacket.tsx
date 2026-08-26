@@ -14,12 +14,12 @@ export function HeroPacket() {
           <div className={styles.bottomRow}>
             <div className={styles.copy}>
               <div className={styles.title}>
-                Brain
+                Not
                 <br />
-                hydration
+                Coffee
               </div>
               <div className={styles.sub}>
-                Sodium, potassium, magnesium. Citrus. Before coffee.
+                Sodium. Potassium. Magnesium. That&rsquo;s it.
               </div>
             </div>
             <div className={styles.dot} />

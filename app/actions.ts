@@ -18,7 +18,7 @@ export async function preorderAction(
 ): Promise<PreorderState> {
   // Honeypot: real visitors never fill this hidden field.
   if (formData.get("company")) {
-    return { status: "success", message: "You're on the list." };
+    return { status: "success", message: "You're in." };
   }
 
   const email = String(formData.get("email") ?? "").trim();
@@ -26,7 +26,7 @@ export async function preorderAction(
   const flavor = VALID_FLAVORS.has(flavorRaw) ? flavorRaw : "no-preference";
 
   if (!EMAIL_RE.test(email)) {
-    return { status: "error", message: "That email doesn't look right — try again." };
+    return { status: "error", message: "That's not an email. Try again." };
   }
 
   const { count, alreadyExists } = await addPreorder({ email, flavor });
@@ -34,8 +34,8 @@ export async function preorderAction(
   return {
     status: "success",
     message: alreadyExists
-      ? "You're already on the list — we'll be in touch."
-      : "You're on the list. We'll email you before anything ships or gets charged.",
+      ? "Already got you. Sit tight."
+      : "You're in. We'll email you before anything ships, charges, or otherwise becomes real.",
     count,
   };
 }

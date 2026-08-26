@@ -18,13 +18,13 @@ const siteUrl = "https://amsalt.example.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "AM Salt — Hydrate your brain first.",
+  title: "AM Salt — Not a wellness blend. Just salt.",
   description:
-    "A morning electrolyte packet built for the first hour, not the workout. Sodium, potassium, and magnesium before your coffee. Preorder the first batch.",
+    "Sodium, potassium, magnesium, water. Before your coffee, not instead of it. No proprietary formula, no blend, no nonsense.",
   openGraph: {
-    title: "AM Salt — Hydrate your brain first.",
+    title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "Electrolytes for the first hour. One packet, sixteen ounces, before anything else.",
+      "Your brain is 73% water. Coffee is 0% water. One packet, sixteen ounces, before anything else.",
     type: "website",
   },
 };

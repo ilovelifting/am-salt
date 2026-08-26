@@ -16,9 +16,9 @@ export function Process() {
           </div>
         ))}
         <div className={styles.note}>
-          Caffeine on a dehydrated system is why the first cup can feel
-          jittery and short-lived. Water and salt first; coffee lands
-          better.
+          Caffeine on top of dehydration is just anxiety with extra steps.
+          Fix the water problem first — then the coffee actually does its
+          job.
         </div>
       </div>
     </section>
