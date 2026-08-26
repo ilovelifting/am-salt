@@ -16,21 +16,22 @@ export function Hero() {
         </h1>
         <p className={styles.lede}>
           You didn&rsquo;t wake up tired. You woke up down a liter of water
-          and short on sodium, and called it tired. One packet, sixteen
-          ounces, before you do anything else &mdash; including the coffee.
+          and short on sodium &mdash; and called it tired. One packet,
+          sixteen ounces, the second you&rsquo;re up. That&rsquo;s the
+          difference between groggy and actually alert.
         </p>
         <div className={styles.ctaRow}>
           <a href="#preorder" className={styles.primaryCta}>
-            Fix the actual problem
+            Wake up alert
           </a>
           <a href="#science" className={styles.secondaryCta}>
             See the proof
           </a>
         </div>
         <div className={styles.tags}>
-          <div>NOT A BLEND</div>
-          <div>NOT PROPRIETARY</div>
-          <div>JUST SODIUM</div>
+          <div>NO SUGAR</div>
+          <div>NO CRASH</div>
+          <div>FULLY ALERT</div>
         </div>
       </div>
       <div className={styles.art}>

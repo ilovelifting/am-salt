@@ -12,7 +12,7 @@ export const steps = [
   {
     n: "03",
     title: "Then coffee.",
-    body: "Now it actually works, instead of just making you jittery on top of dehydrated.",
+    body: "Now it actually works — sharp, not wired.",
   },
 ];
 
@@ -62,7 +62,7 @@ export const scienceStats: ScienceStat[] = [
   },
   {
     stat: "Salt",
-    body: "The part that makes water actually absorb instead of running straight through you. Not a superfood. A mineral. It's fine.",
+    body: "The part that makes the water actually absorb — into circulation, into your brain — instead of running straight through you. This is what turns awake into alert.",
     refIndex: 3,
   },
 ];

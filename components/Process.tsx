@@ -17,8 +17,8 @@ export function Process() {
         ))}
         <div className={styles.note}>
           Caffeine on top of dehydration is just anxiety with extra steps.
-          Fix the water problem first — then the coffee actually does its
-          job.
+          Hydrate first and the caffeine finally does what you wanted it to
+          do &mdash; alert, not wired.
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ export function HeroPacket() {
                 Coffee
               </div>
               <div className={styles.sub}>
-                Sodium. Potassium. Magnesium. That&rsquo;s it.
+                Sodium. Potassium. Magnesium. Straight to your brain.
               </div>
             </div>
             <div className={styles.dot} />
