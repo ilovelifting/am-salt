@@ -1,0 +1,9 @@
+.page {
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  overflow-x: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+}

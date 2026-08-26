@@ -1,0 +1,122 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border);
+}
+
+.copy {
+  padding: 92px 48px 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.h1 {
+  margin: 0;
+  font-size: clamp(48px, 7.5vw, 108px);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+  font-weight: 800;
+  max-width: 13ch;
+  text-wrap: balance;
+}
+
+.lede {
+  margin: 0;
+  font-size: 21px;
+  line-height: 1.5;
+  max-width: 44ch;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
+.ctaRow {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.primaryCta {
+  background: var(--accent);
+  color: #fff;
+  padding: 19px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: 2px;
+  transition: background 0.15s ease;
+}
+
+.primaryCta:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.secondaryCta {
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 3px;
+}
+
+.secondaryCta:hover {
+  color: var(--accent-hover);
+}
+
+.tags {
+  display: flex;
+  gap: 44px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.art {
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 40px;
+  border-left: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .copy {
+    padding: 56px 24px 48px;
+    gap: 26px;
+  }
+
+  .art {
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding: 48px 24px;
+  }
+}
