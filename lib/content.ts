@@ -7,7 +7,7 @@ export const steps = [
   {
     n: "02",
     title: "One stick. Thirty seconds.",
-    body: "Dissolves clear. Tastes like salt, because it is salt. If you wanted flavor, that's what the coffee is for.",
+    body: "Dissolves clear. It's flavored — but you'll still taste the salt underneath. That's kind of the point.",
   },
   {
     n: "03",
