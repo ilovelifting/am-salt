@@ -6,6 +6,7 @@ import { Panel } from "@/components/Panel";
 import { Flavors } from "@/components/Flavors";
 import { Preorder } from "@/components/Preorder";
 import { Faq } from "@/components/Faq";
+import { JournalTeaser } from "@/components/journal/JournalTeaser";
 import { Footer } from "@/components/Footer";
 import { getPreorderCount } from "@/lib/preorders";
 import styles from "./page.module.css";
@@ -27,6 +28,7 @@ export default async function Home() {
       <Flavors />
       <Preorder initialCount={preorderCount} />
       <Faq />
+      <JournalTeaser />
       <Footer />
     </main>
   );

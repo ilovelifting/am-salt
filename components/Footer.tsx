@@ -1,9 +1,13 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div>AM Salt</div>
+      <Link href="/journal" className={styles.journalLink}>
+        Journal
+      </Link>
       <div className={styles.disclaimer}>
         Statements have not been evaluated by the FDA. This product is not
         intended to diagnose, treat, cure, or prevent any disease. It&rsquo;s

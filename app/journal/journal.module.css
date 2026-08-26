@@ -1,0 +1,48 @@
+.intro {
+  padding: 100px 48px 64px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.h1 {
+  margin: 0 0 20px;
+  font-size: clamp(36px, 6vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+.body {
+  margin: 0;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+
+.list {
+  padding: 64px 48px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .intro {
+    padding: 56px 24px 40px;
+  }
+
+  .list {
+    padding: 40px 24px;
+    grid-template-columns: 1fr;
+  }
+}

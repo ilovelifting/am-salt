@@ -11,6 +11,15 @@
   color: var(--muted);
 }
 
+.journalLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.journalLink:hover {
+  color: var(--fg);
+}
+
 .disclaimer {
   max-width: 46ch;
   text-transform: none;

@@ -23,9 +23,11 @@ Open [http://localhost:3000](http://localhost:3000).
 - `app/page.tsx` — assembles the page from `components/`
 - `app/actions.ts` — the `preorderAction` Server Action (validates email, rate-limits, writes to the store)
 - `app/not-found.tsx` — branded 404
+- `app/journal/page.tsx`, `app/journal/[slug]/page.tsx` — the research blog: an index and per-post pages, rendered from `lib/journal.ts` via `components/journal/`
 - `app/{icon,apple-icon,opengraph-image}.tsx` — generated brand assets, no static image files to keep in sync
 - `app/{robots,sitemap}.ts` — SEO file conventions
 - `lib/content.ts` — copy for steps/panel/flavors/science-stats/FAQ, plus the citation list
+- `lib/journal.ts` — journal post content and citations, consumed by `app/journal/`
 - `lib/pricing.ts` — price math
 - `lib/preorders.ts` — file-based preorder store (`data/preorders.json`, gitignored)
 - `lib/rate-limit.ts` — in-memory per-IP rate limiter for the preorder action
