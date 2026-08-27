@@ -19,7 +19,7 @@ export function Preorder({ initialCount }: { initialCount: number }) {
   return (
     <section id="preorder" className={styles.section}>
       <div className={styles.intro}>
-        <h2 className={styles.h2}>Thirty mornings.</h2>
+        <h2 className={styles.h2}>Thirty better mornings.</h2>
         <p className={styles.body}>
           One box, one stick a day. Reserve yours and we&rsquo;ll email you
           before your card is ever charged. That&rsquo;s it, that&rsquo;s

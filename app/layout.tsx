@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "Your brain is 73% water. Coffee is 0% water. One packet, sixteen ounces, before anything else.",
+      "You're not tired. You're dry. One stick, sixteen ounces, before the coffee — and you get the first hour of your day back.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "Your brain is 73% water. Coffee is 0% water. One packet, sixteen ounces, before anything else.",
+      "You're not tired. You're dry. One stick, sixteen ounces, before the coffee — and you get the first hour of your day back.",
   },
 };
 

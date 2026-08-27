@@ -58,8 +58,8 @@ export default async function Image() {
             maxWidth: 980,
           }}
         >
-          <div style={{ display: "flex" }}>Your brain is 73% water.</div>
-          <div style={{ display: "flex" }}>Coffee is 0% water.</div>
+          <div style={{ display: "flex" }}>You&rsquo;re not tired.</div>
+          <div style={{ display: "flex" }}>You&rsquo;re dry.</div>
         </div>
 
         <div

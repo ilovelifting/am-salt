@@ -10,15 +10,15 @@ export function Hero() {
           Status: dehydrated
         </div>
         <h1 className={styles.h1}>
-          Your brain is <span className={styles.hl}>73% water</span>.
+          You&rsquo;re not tired.
           <br />
-          Coffee is 0% water.
+          You&rsquo;re <span className={styles.hl}>dry</span>.
         </h1>
         <p className={styles.lede}>
-          You didn&rsquo;t wake up tired. You woke up down a liter of water
-          and short on sodium &mdash; and called it tired. One packet,
-          sixteen ounces, the second you&rsquo;re up. That&rsquo;s the
-          difference between groggy and actually alert.
+          Eight hours without a sip leaves you down water and short on
+          sodium. It feels exactly like being tired, so that&rsquo;s what
+          you blame it on. One stick, sixteen ounces, before the coffee
+          &mdash; and you get the first hour of your day back.
         </p>
         <div className={styles.ctaRow}>
           <a href="#preorder" className={styles.primaryCta}>
