@@ -1,39 +1,39 @@
 export type Benefit = {
   id: string;
   title: string;
-  body: string; // may contain {{cite:N}} tokens
+  body: string;
 };
 
 export const benefits: Benefit[] = [
   {
     id: "sharper-first-hour",
     title: "A sharper first hour",
-    body: "Mild dehydration — as little as 1–2% of body water — measurably slows attention, working memory, and mood in controlled studies.{{cite:1}} You lose more than that overnight without eating or drinking anything, every single night. Rehydrating with sodium before anything else gives your brain back what it was already missing before the coffee even brews.",
+    body: "Your brain runs on water it doesn't have yet. Losing just 1–2% of your body's water is enough to dull focus and flatten your mood — and you lose more than that every night, just by sleeping. Rehydrate with sodium before anything else, and you get that sharpness back before the coffee even brews.",
   },
   {
     id: "actually-absorbed",
     title: "Actually absorbed, not just swallowed",
-    body: "Water without sodium doesn't stay in circulation as well — sodium is what keeps fluid where your body can use it, instead of passing straight through.{{cite:2}} That's the specific, mechanical reason rehydration science treats sodium as a required part of a hydration beverage, not a flavoring choice.{{cite:3}}",
+    body: "Water without sodium doesn't stick around. It passes through fast instead of getting into circulation where it can do something. Sodium is what keeps it there — the entire reason rehydration drinks contain salt in the first place, not sugar.",
   },
   {
     id: "headaches",
     title: "Fewer headaches, maybe",
-    body: "Chronic low fluid intake is linked to more frequent headaches, and in one small randomized trial, patients with recurrent headaches who increased their water intake reported meaningfully more improvement than those who didn't.{{cite:4}} We're not going to oversell this one — the trial was small and only partially blinded, and later critical appraisals flagged real methodological limits. But hydration is one of the few headache levers you can adjust in thirty seconds each morning, so it's worth trying if you get them.",
+    body: "Chronic low fluid intake shows up as more frequent headaches for a lot of people. We won't oversell this one — the strongest study on it was small — but hydration is one of the few headache levers you can pull in thirty seconds each morning. Worth trying if you get them.",
   },
   {
     id: "beyond-sodium",
     title: "Not just sodium — potassium and magnesium too",
-    body: "Sodium isn't the only mineral your body loses and runs on. Potassium is the main mineral inside your cells and is required for normal cell function and fluid balance;{{cite:5}} magnesium is a cofactor in more than 300 enzyme reactions, including the ones regulating muscle and nerve function.{{cite:6}} Most morning-hydration advice stops at sodium. This formula doesn't.",
+    body: "Sodium gets all the attention, but it's not the only mineral you lose overnight. Potassium keeps your cells and fluid balance running. Magnesium powers over 300 processes in your body, including the ones that control muscle and nerve function. Most morning drinks stop at sodium. This one doesn't.",
   },
   {
     id: "before-a-workout",
     title: "Works before a workout too",
-    body: "This isn't only a desk-morning product. Sports-science reviews on hydration beverages consistently land on the same conclusion: fluids containing sodium — not plain water — are what actually help maintain blood volume and delay dehydration during exercise.{{cite:3}} If your morning starts with movement instead of a commute, the same packet applies before you start, not just before you start typing.",
+    body: "This isn't only a desk-morning fix. The same sodium-and-water combination is what keeps blood volume up and delays dehydration during exercise. If your morning starts with movement instead of a commute, the packet works exactly the same way — before you start, not after.",
   },
   {
     id: "no-crash-no-blend",
     title: "No sugar, no crash, no proprietary blend",
-    body: "None of this comes from a stimulant or a sugar spike — there's zero added sugar in the formula, so there's no crash to manage two hours later. And unlike a lot of the electrolyte category, we're not asking you to trust a “proprietary blend”: every ingredient and its exact milligram amount is on the panel, in full.",
+    body: "Zero added sugar means there's no crash waiting for you at 10am. And unlike most of the electrolyte aisle, we're not hiding behind a “proprietary blend” — every ingredient, and its exact amount, is right there on the label.",
   },
 ];
 

@@ -29,38 +29,15 @@
   max-width: 56ch;
 }
 
-.refs {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 56px 24px 0;
-}
-
-.refsLabel {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 16px;
-  border-top: 1px solid var(--border);
-  padding-top: 24px;
-}
-
-.refsList {
-  margin: 0;
-  padding: 0 0 0 1.1em;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--muted);
+.researchLink {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .ctaWrap {
   max-width: 720px;
   margin: 0 auto;
-  padding: 48px 24px 96px;
+  padding: 64px 24px 96px;
 }
 
 .productCta {

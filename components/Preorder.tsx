@@ -76,7 +76,7 @@ export function Preorder({ initialCount }: { initialCount: number }) {
               ))}
             </select>
             <button type="submit" disabled={pending} className={styles.cta}>
-              {pending ? "Reserving…" : "Get in line"}
+              {pending ? "Reserving…" : "Reserve my box"}
             </button>
             {state.status === "error" && (
               <p className={styles.error} role="alert">

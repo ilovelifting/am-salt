@@ -37,16 +37,6 @@
   color: var(--ink-soft);
 }
 
-.citeMark {
-  font-size: 13px;
-  margin-left: 1px;
-}
-
-.citeMark a {
-  color: var(--accent);
-  font-weight: 600;
-}
-
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;

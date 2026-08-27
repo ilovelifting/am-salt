@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { scienceStats, references } from "@/lib/content";
+import Link from "next/link";
+import { scienceStats } from "@/lib/content";
 import styles from "./ScienceStats.module.css";
 
 const SCRAMBLE_CHARS = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -68,46 +69,15 @@ function StatCard({
   index: number;
   active: boolean;
 }) {
-  const [open, setOpen] = useState(false);
   const display = useDecode(stat.stat, active, index * 150);
-  const ref = references.find((r) => r.id === stat.refIndex);
-  const panelId = `source-${stat.refIndex}`;
 
   return (
     <div className={styles.card}>
       <div className={styles.reading}>
         Reading {String(index + 1).padStart(2, "0")} / 03
       </div>
-      <div className={styles.stat}>
-        {display}
-        <sup className={styles.refMark}>{stat.refIndex}</sup>
-      </div>
+      <div className={styles.stat}>{display}</div>
       <div className={styles.body}>{stat.body}</div>
-      {ref && (
-        <>
-          <button
-            type="button"
-            className={styles.sourceToggle}
-            aria-expanded={open}
-            aria-controls={panelId}
-            onClick={() => setOpen((v) => !v)}
-          >
-            <span className={styles.chevron} data-open={open}>
-              ›
-            </span>
-            {open ? "Hide source" : "Show source"}
-          </button>
-          <div
-            id={panelId}
-            className={styles.sourcePanel}
-            data-open={open}
-          >
-            <div className={styles.sourceInner}>
-              <p className={styles.sourceText}>{ref.text}</p>
-            </div>
-          </div>
-        </>
-      )}
     </div>
   );
 }
@@ -140,6 +110,9 @@ export function ScienceStats() {
           <StatCard key={s.stat} stat={s} index={i} active={active} />
         ))}
       </div>
+      <Link href="/research" className={styles.researchLink}>
+        Sourced, not guessed &mdash; see the research
+      </Link>
     </section>
   );
 }

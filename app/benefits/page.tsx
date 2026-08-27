@@ -3,14 +3,13 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BenefitsList } from "@/components/benefits/BenefitsList";
-import { benefitReferences } from "@/lib/benefits";
 import pageStyles from "../page.module.css";
 import styles from "./benefits.module.css";
 
 export const metadata: Metadata = {
   title: "Benefits — AM Salt",
   description:
-    "Six specific, cited reasons water and sodium before coffee actually work — and where the evidence is thinner than the internet pretends.",
+    "Six specific reasons water and sodium before coffee actually work — not vibes, not a mood board.",
 };
 
 export default function BenefitsPage() {
@@ -22,23 +21,15 @@ export default function BenefitsPage() {
         <h1 className={styles.h1}>Why this actually works.</h1>
         <p className={styles.body}>
           Not vibes, not a wellness-brand mood board &mdash; six specific
-          mechanisms, each with a real citation. Where the evidence is
-          thinner than it looks, we say so.
+          reasons, backed by real research.{" "}
+          <Link href="/research" className={styles.researchLink}>
+            See the studies
+          </Link>
+          .
         </p>
       </section>
 
       <BenefitsList />
-
-      <div className={styles.refs}>
-        <div className={styles.refsLabel}>References</div>
-        <ol className={styles.refsList}>
-          {benefitReferences.map((ref) => (
-            <li key={ref.id} id={`ref-${ref.id}`}>
-              {ref.text}
-            </li>
-          ))}
-        </ol>
-      </div>
 
       <div className={styles.ctaWrap}>
         <div className={styles.productCta}>

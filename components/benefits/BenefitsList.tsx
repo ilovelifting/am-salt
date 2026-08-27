@@ -1,5 +1,4 @@
 import { benefits } from "@/lib/benefits";
-import { CiteText } from "@/components/journal/CiteText";
 import styles from "./BenefitsList.module.css";
 
 export function BenefitsList() {
@@ -11,9 +10,7 @@ export function BenefitsList() {
             {String(i + 1).padStart(2, "0")} / {String(benefits.length).padStart(2, "0")}
           </div>
           <h2 className={styles.title}>{benefit.title}</h2>
-          <p className={styles.body}>
-            <CiteText text={benefit.body} citeClassName={styles.citeMark} />
-          </p>
+          <p className={styles.body}>{benefit.body}</p>
         </div>
       ))}
     </div>

@@ -51,80 +51,29 @@
   font-variant-numeric: tabular-nums;
 }
 
-.refMark {
-  font-family: var(--font-sans);
-  font-size: 15px;
-  font-weight: 600;
-  margin-left: 3px;
-  top: -1.6em;
-}
-
 .body {
   font-size: 17px;
   line-height: 1.5;
   color: var(--ink-soft);
-  margin: 0 0 20px;
+  margin: 0;
 }
 
-.sourceToggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  align-self: flex-start;
-  margin-top: auto;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+.researchLink {
+  display: inline-block;
+  margin-top: 32px;
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
-  transition: color 0.15s ease;
 }
 
-.sourceToggle:hover {
+.researchLink:hover {
   color: var(--accent);
 }
 
-.chevron {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.chevron[data-open="true"] {
-  transform: rotate(90deg);
-}
-
-.sourcePanel {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.25s ease;
-}
-
-.sourcePanel[data-open="true"] {
-  grid-template-rows: 1fr;
-}
-
-.sourceInner {
-  overflow: hidden;
-}
-
-.sourceText {
-  margin: 14px 0 0;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--muted);
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .card,
-  .chevron,
-  .sourcePanel,
-  .sourceToggle {
+  .card {
     transition: none;
   }
 }
