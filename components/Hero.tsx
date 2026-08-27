@@ -15,13 +15,13 @@ export function Hero() {
         </h1>
         <div className={styles.body}>
           <p className={styles.lede}>
-            After eight hours without water, your body can start the day
-            behind.
+            You know the first hour. The one you spend waiting to feel like
+            yourself.
           </p>
           <p className={styles.lede}>
-            Mix one stick into 16 ounces when you wake up to rehydrate with
-            water and electrolytes before coffee&mdash;so you can feel like
-            yourself sooner.
+            This is the fix for that hour. Water and electrolytes before
+            the caffeine &mdash; no jolt, no crash, no waiting until eleven
+            to feel human. Just a morning that starts when you do.
           </p>
           <p className={styles.kicker}>
             One stick. One glass. One better first hour.

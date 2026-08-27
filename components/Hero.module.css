@@ -5,11 +5,14 @@
   border-bottom: 1px solid var(--border);
 }
 
+/* Vertical rhythm is tuned so the whole hero clears a 1366x768 laptop —
+   the most common desktop size — rather than cutting the packet off at
+   the fold. Measured at 806px before, ~720px now. */
 .copy {
-  padding: 92px 48px 88px;
+  padding: 68px 48px 64px;
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 26px;
 }
 
 .eyebrow {
@@ -119,7 +122,7 @@
   display: flex;
   gap: 44px;
   flex-wrap: wrap;
-  margin-top: 14px;
+  margin-top: 8px;
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.06em;
@@ -131,7 +134,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 72px 40px;
+  padding: 56px 40px;
   border-left: 1px solid var(--border);
 }
 
@@ -140,14 +143,34 @@
     grid-template-columns: 1fr;
   }
 
+  /* Tightened so the CTA clears the fold on a 375x667 phone, where it
+     previously landed at 695px — below the viewport entirely. */
   .copy {
-    padding: 56px 24px 48px;
-    gap: 26px;
+    padding: 36px 24px 32px;
+    gap: 18px;
+  }
+
+  .body {
+    gap: 13px;
+  }
+
+  .lede {
+    font-size: 17px;
+  }
+
+  .kicker {
+    margin-top: 2px;
+    font-size: 17px;
+  }
+
+  .tags {
+    gap: 28px;
+    margin-top: 4px;
   }
 
   .art {
     border-left: none;
     border-top: 1px solid var(--border);
-    padding: 48px 24px;
+    padding: 32px 24px;
   }
 }

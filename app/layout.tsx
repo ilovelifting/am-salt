@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "After eight hours without water, your body can start the day behind. One stick in 16 ounces before coffee — so you can feel like yourself sooner.",
+      "You know the first hour — the one you spend waiting to feel like yourself. Water and electrolytes before the caffeine. No jolt, no crash, just a morning that starts when you do.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "After eight hours without water, your body can start the day behind. One stick in 16 ounces before coffee — so you can feel like yourself sooner.",
+      "You know the first hour — the one you spend waiting to feel like yourself. Water and electrolytes before the caffeine. No jolt, no crash, just a morning that starts when you do.",
   },
 };
 
