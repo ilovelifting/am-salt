@@ -1,6 +1,17 @@
+/* Upright packet: a wide seal, crimp lines running vertically across it. */
 .cap {
   background: repeating-linear-gradient(
     90deg,
+    var(--bg-alt) 0 3px,
+    var(--border-soft) 3px 6px
+  );
+}
+
+/* Packet on its side: a tall seal, so the crimp lines run horizontally. */
+.capVertical {
+  align-self: stretch;
+  background: repeating-linear-gradient(
+    0deg,
     var(--bg-alt) 0 3px,
     var(--border-soft) 3px 6px
   );

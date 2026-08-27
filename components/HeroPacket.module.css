@@ -1,35 +1,36 @@
+/* The packet lies on its side, tilted so it runs up from lower-left to
+   upper-right. Because it's laid out horizontally rather than being an
+   upright stick spun 90deg, the label copy sits the right way up with no
+   counter-rotation. */
 .wrap {
-  width: 156px;
+  display: flex;
+  width: 456px;
+  max-width: 100%;
   flex: none;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.34);
-  transform: rotate(-3deg);
+  box-shadow: 0 30px 60px rgba(15, 26, 46, 0.22);
+  transform: rotate(-14deg);
 }
 
 .body {
-  height: 452px;
-  background: var(--bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.inner {
-  width: 452px;
-  height: 156px;
-  flex: none;
-  transform: rotate(-90deg);
+  flex: 1;
+  min-width: 0;
+  height: 140px;
+  /* --surface, not --paper: the latter only exists in the standalone demo,
+     and an undefined token here made the body transparent, dropping the
+     meta text onto the blue panel at 4.38:1. */
+  background: var(--surface);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 30px;
-  box-sizing: border-box;
+  padding: 18px 26px;
+  overflow: hidden;
 }
 
 .metaRow {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  gap: 16px;
   font-family: var(--font-mono);
   font-size: 10px;
   color: var(--muted);
@@ -53,12 +54,13 @@
 .copy {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
+  min-width: 0;
 }
 
 .title {
-  font-size: 40px;
-  line-height: 0.86;
+  font-size: 34px;
+  line-height: 0.9;
   font-weight: 800;
   letter-spacing: -0.04em;
   color: var(--ink);
@@ -66,17 +68,41 @@
 
 .sub {
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--ink-soft);
-  max-width: 34ch;
+  max-width: 30ch;
 }
 
-/* The packet carries the action colour, so the product itself reads as
-   the same "energy" cue as the buy buttons. */
 .dot {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   flex: none;
   background: var(--energy);
   border-radius: 50%;
+}
+
+/* Scaled down so the tilted packet still clears a narrow phone column. */
+@media (max-width: 900px) {
+  .wrap {
+    width: 330px;
+    transform: rotate(-12deg);
+  }
+
+  .body {
+    height: 112px;
+    padding: 14px 18px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .sub {
+    font-size: 10px;
+  }
+
+  .dot {
+    width: 18px;
+    height: 18px;
+  }
 }
