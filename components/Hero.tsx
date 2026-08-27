@@ -15,14 +15,14 @@ export function Hero() {
         </h1>
         <div className={styles.body}>
           <p className={styles.lede}>
-            It isn&rsquo;t the first hour you lose. It&rsquo;s everything
-            downstream of it &mdash; the focus, the patience, the whole day
-            spent catching up on water you gave away overnight.
+            Tear one open. Sixteen ounces of water. Drink it before you
+            touch the coffee.
           </p>
           <p className={styles.lede}>
-            Water and electrolytes before the caffeine, so you start level
-            instead of behind. No jolt. No crash. No four o&rsquo;clock
-            where you&rsquo;re running on fumes and a third coffee.
+            Sodium, potassium and magnesium put back what eight hours of
+            sleep took out of you. No jolt, no crash, no four o&rsquo;clock
+            running on fumes and a third coffee &mdash; just a day that
+            starts level and stays there.
           </p>
           <p className={styles.kicker}>
             One stick. One glass. A day that doesn&rsquo;t fall behind.
