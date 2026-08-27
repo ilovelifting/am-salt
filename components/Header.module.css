@@ -15,15 +15,18 @@
   font-weight: 500;
 }
 
+/* Sans, sentence case and near-normal tracking. The monospace uppercase
+   this replaced read as technical UI rather than a shop's navigation —
+   the wordmark keeps that treatment, since there it's a logotype. */
 .nav {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   flex-wrap: wrap;
   white-space: nowrap;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
 }
 
 .nav a {

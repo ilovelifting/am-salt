@@ -1,21 +1,28 @@
-/* Palette follows a 60/30/10 split: white base, blue as the brand and
+/* Palette follows a 60/30/10 split: off-white base, blue as the brand and
    structure, orange reserved strictly for "buy" actions. Yellow appears
-   only as a highlight fill behind dark text. Every pairing below is
-   contrast-checked — see the note on each accent for its measured ratio. */
+   only as a highlight fill behind dark text. This is a light-only design
+   by intent — there is no dark theme, so every colour is stated outright
+   rather than flipped. Ratios noted below are measured, not estimated. */
 :root {
-  /* 60% — near-white base, cooled slightly so it sits under the blues */
-  --bg: #fafbfd;
-  --bg-alt: #f1f5fc;
-  --surface: #ffffff;
-  --border: #e2e9f5;
-  --border-soft: #cfd9ec;
+  /* Keeps the browser's own form controls, scrollbars and autofill styling
+     light. Without this the preorder input and select render with dark UA
+     chrome on a dark-mode OS, against an otherwise light page. */
+  color-scheme: only light;
 
-  /* Ink: deep navy rather than pure black — softer, still 16.8:1 on --bg */
+  /* 60% — soft off-whites rather than stark white, layered so sections and
+     cards separate by tone instead of by hard edges. */
+  --bg: #f4f6f8;
+  --bg-alt: #ecf0f5;
+  --surface: #fcfcfd;
+  --border: #dde3ec;
+  --border-soft: #c7d0de;
+
+  /* Ink: deep navy rather than pure black — softer, still 16.1:1 on --bg */
   --ink: #0f1a2e;
   --ink-soft: #3d4a63;
   --muted: #5e6c85;
 
-  /* 30% — blue: links, eyebrows, stats, structure. 6.74:1 on --bg */
+  /* 30% — blue: links, eyebrows, stats, structure. 6.44:1 on --bg */
   --accent: #1450c8;
   --accent-hover: #0f3f9e;
   --navy: #0f1a2e;
@@ -26,18 +33,18 @@
   --energy: #ff8524;
   --energy-hover: #f26f0a;
   --energy-edge: #d4600a;
-  /* Pin the label colour rather than reusing --ink: if a dark theme is
-     ever added, --ink flips light and would leave white-on-orange. */
+  /* Named for the pairing rather than reusing --ink, so the label colour
+     is chosen for the orange it sits on and not by coincidence. */
   --on-energy: #0f1a2e;
 
   /* Yellow: highlight fill behind ink text (11.3:1). --sun-edge rings the
-     status dot so it clears 3:1 against the near-white page. */
+     status dot so it clears 3:1 against the off-white page. */
   --sun: #ffc93c;
   --sun-edge: #b87f00;
   --on-sun: #0f1a2e;
 
   /* Light-blue panel — hero art backdrop and the ingredient panel */
-  --panel-bg: #e8f0fe;
+  --panel-bg: #e2eaf6;
   --panel-line: rgba(15, 26, 46, 0.14);
   --panel-muted: #47567d;
 
