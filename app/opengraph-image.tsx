@@ -17,7 +17,7 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#12123A",
+          background: "#FAFBFD",
           padding: "72px 80px",
           fontFamily: "Archivo",
         }}
@@ -28,13 +28,13 @@ export default async function Image() {
               width: 18,
               height: 18,
               borderRadius: "50%",
-              background: "#1F4FD8",
+              background: "#FF8524",
               display: "flex",
             }}
           />
           <div
             style={{
-              color: "#F7F7F5",
+              color: "#5E6C85",
               fontSize: 22,
               fontWeight: 700,
               letterSpacing: 4,
@@ -50,7 +50,7 @@ export default async function Image() {
           style={{
             display: "flex",
             flexDirection: "column",
-            color: "#F7F7F5",
+            color: "#0F1A2E",
             fontSize: 74,
             fontWeight: 800,
             lineHeight: 1.08,
@@ -65,14 +65,23 @@ export default async function Image() {
         <div
           style={{
             display: "flex",
+            alignItems: "center",
             gap: 40,
-            color: "#8E8EE0",
+            color: "#5E6C85",
             fontSize: 20,
             fontWeight: 600,
             letterSpacing: 2,
             textTransform: "uppercase",
           }}
         >
+          <div
+            style={{
+              width: 64,
+              height: 6,
+              background: "#FF8524",
+              display: "flex",
+            }}
+          />
           <div style={{ display: "flex" }}>No sugar</div>
           <div style={{ display: "flex" }}>No crash</div>
           <div style={{ display: "flex" }}>Fully alert</div>

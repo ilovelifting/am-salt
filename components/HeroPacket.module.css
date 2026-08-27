@@ -71,10 +71,12 @@
   max-width: 34ch;
 }
 
+/* The packet carries the action colour, so the product itself reads as
+   the same "energy" cue as the buy buttons. */
 .dot {
   width: 26px;
   height: 26px;
   flex: none;
-  background: var(--accent);
+  background: var(--energy);
   border-radius: 50%;
 }

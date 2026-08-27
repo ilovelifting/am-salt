@@ -24,9 +24,10 @@
 }
 
 .dot {
-  width: 7px;
-  height: 7px;
-  background: var(--accent);
+  width: 8px;
+  height: 8px;
+  background: var(--sun);
+  border: 1px solid var(--sun-edge);
   border-radius: 50%;
 }
 
@@ -38,6 +39,15 @@
   font-weight: 800;
   max-width: 22ch;
   text-wrap: balance;
+}
+
+/* Yellow marker. Ink on --sun measures 11.3:1, so the highlighted words
+   stay the most readable thing on the page rather than the least. */
+.hl {
+  background: var(--sun);
+  padding: 0 0.08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .lede {
@@ -57,19 +67,20 @@
 }
 
 .primaryCta {
-  background: var(--accent);
-  color: #fff;
-  padding: 19px 36px;
+  background: var(--energy);
+  color: var(--ink);
+  border: 1px solid var(--energy-edge);
+  padding: 18px 35px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.01em;
   border-radius: 2px;
   transition: background 0.15s ease;
 }
 
 .primaryCta:hover {
-  background: var(--accent-hover);
-  color: #fff;
+  background: var(--energy-hover);
+  color: var(--ink);
 }
 
 .secondaryCta {

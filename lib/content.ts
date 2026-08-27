@@ -30,16 +30,18 @@ export const flavors = [
     name: "Citrus Salt",
     short: "Citrus",
     note: "Grapefruit, lemon peel, salt. Tastes like you'd expect something with “salt” in the name to taste.",
-    bg: "#F7F7F5",
-    fg: "#121212",
+    // Packet label colours are fixed print colours, not theme tokens.
+    // Both pairings clear AA: 7.15:1 here, 6.74:1 on the blackcurrant.
+    bg: "#FF8524",
+    fg: "#0F1A2E",
   },
   {
     id: "blackcurrant",
     name: "Blackcurrant",
     short: "Currant",
     note: "Tart, a little moody. For mornings that are also tart and a little moody.",
-    bg: "#1F4FD8",
-    fg: "#F7F7F5",
+    bg: "#1450C8",
+    fg: "#FAFBFD",
   },
 ] as const;
 

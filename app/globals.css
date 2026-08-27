@@ -1,20 +1,41 @@
+/* Palette follows a 60/30/10 split: white base, blue as the brand and
+   structure, orange reserved strictly for "buy" actions. Yellow appears
+   only as a highlight fill behind dark text. Every pairing below is
+   contrast-checked — see the note on each accent for its measured ratio. */
 :root {
-  --bg: #f7f7f5;
-  --bg-alt: #edede7;
-  --border: #e2e2dd;
-  --border-soft: #d2d2c8;
-  --ink: #121212;
-  --ink-soft: #3a3a34;
-  --muted: #59594f;
-  --accent: #1f4fd8;
-  --accent-hover: #12123a;
-  --navy: #12123a;
+  /* 60% — near-white base, cooled slightly so it sits under the blues */
+  --bg: #fafbfd;
+  --bg-alt: #f1f5fc;
+  --surface: #ffffff;
+  --border: #e2e9f5;
+  --border-soft: #cfd9ec;
 
-  /* Light-blue accent panel — used for the hero art backdrop and the
-     ingredient panel, instead of the old dark-navy fill. */
-  --panel-bg: #e3ebfc;
-  --panel-line: rgba(18, 18, 58, 0.14);
-  --panel-muted: #4a5980;
+  /* Ink: deep navy rather than pure black — softer, still 16.8:1 on --bg */
+  --ink: #0f1a2e;
+  --ink-soft: #3d4a63;
+  --muted: #5e6c85;
+
+  /* 30% — blue: links, eyebrows, stats, structure. 6.74:1 on --bg */
+  --accent: #1450c8;
+  --accent-hover: #0f3f9e;
+  --navy: #0f1a2e;
+
+  /* 10% — orange: primary "buy" actions only. Carries dark ink rather
+     than white text (7.15:1 vs 3.2:1 — white on orange can't reach AA).
+     --energy-edge gives the button a 3:1 boundary against the page. */
+  --energy: #ff8524;
+  --energy-hover: #f26f0a;
+  --energy-edge: #d4600a;
+
+  /* Yellow: highlight fill behind ink text (11.3:1). --sun-edge rings the
+     status dot so it clears 3:1 against the near-white page. */
+  --sun: #ffc93c;
+  --sun-edge: #b87f00;
+
+  /* Light-blue panel — hero art backdrop and the ingredient panel */
+  --panel-bg: #e8f0fe;
+  --panel-line: rgba(15, 26, 46, 0.14);
+  --panel-muted: #47567d;
 
   --font-sans: var(--font-archivo), Helvetica, Arial, sans-serif;
   --font-mono: var(--font-plex-mono), "SFMono-Regular", Consolas, monospace;

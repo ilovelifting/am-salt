@@ -136,19 +136,20 @@
 
 .productCtaButton {
   flex: none;
-  background: var(--accent);
-  color: #fff;
-  padding: 15px 26px;
+  background: var(--energy);
+  color: var(--ink);
+  border: 1px solid var(--energy-edge);
+  padding: 14px 25px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 2px;
   white-space: nowrap;
   transition: background 0.15s ease;
 }
 
 .productCtaButton:hover {
-  background: var(--accent-hover);
-  color: #fff;
+  background: var(--energy-hover);
+  color: var(--ink);
 }
 
 .references {

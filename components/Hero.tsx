@@ -10,7 +10,7 @@ export function Hero() {
           Status: dehydrated
         </div>
         <h1 className={styles.h1}>
-          Your brain is 73% water.
+          Your brain is <span className={styles.hl}>73% water</span>.
           <br />
           Coffee is 0% water.
         </h1>
