@@ -14,20 +14,27 @@
   gap: 14px;
 }
 
-.index {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-}
-
+/* Replaces the old "01 / 06" counter — same dot marker the Process steps
+   use, so the two sections read as one design language. */
 .title {
+  position: relative;
   margin: 0;
+  padding-top: 22px;
   font-size: 23px;
   font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.2;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--energy);
 }
 
 .body {

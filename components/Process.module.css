@@ -1,76 +1,106 @@
+/* Was a two-column split with a numbered list, which left a large dead
+   area beside the short headline. Now the headline sits across the top and
+   the three steps run as a horizontal track — each marked by a dot on a
+   shared rule rather than a counter. */
 .section {
-  padding: 100px 48px;
+  padding: 96px 48px;
   border-bottom: 1px solid var(--border);
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 72px;
-  align-items: center;
 }
 
+.head {
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+/* ch here resolves against this element's own display size, so the
+   headline breaks to two lines rather than one very wide one. */
 .h2 {
   margin: 0;
-  font-size: clamp(32px, 5vw, 62px);
-  line-height: 0.94;
+  max-width: 19ch;
+  font-size: clamp(32px, 5vw, 58px);
+  line-height: 0.96;
   letter-spacing: -0.04em;
   font-weight: 700;
   text-wrap: balance;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.step {
+.steps {
   display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 24px;
-  padding: 30px 0;
-  border-top: 1px solid var(--border);
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
 }
 
-.n {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  padding-top: 6px;
+/* The rule is the track; the dot is the marker that replaces the number. */
+.step {
+  position: relative;
+  padding-top: 30px;
+  border-top: 2px solid var(--border);
 }
 
-.copy {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.step::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--energy);
 }
 
 .title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 700;
   letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  text-wrap: balance;
 }
 
 .body {
-  font-size: 17px;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 52ch;
+  max-width: 34ch;
 }
 
 .note {
-  border-top: 1px solid var(--border);
+  margin: 56px 0 0;
   padding-top: 26px;
+  border-top: 1px solid var(--border);
   font-size: 15px;
+  line-height: 1.6;
   color: var(--muted);
-  line-height: 1.5;
-  max-width: 52ch;
+  max-width: 56ch;
 }
 
 @media (max-width: 900px) {
   .section {
+    padding: 56px 24px;
+  }
+
+  .head {
+    margin-bottom: 40px;
+  }
+
+  .steps {
     grid-template-columns: 1fr;
     gap: 32px;
-    padding: 56px 24px;
+  }
+
+  .body {
+    max-width: none;
+  }
+
+  .note {
+    margin-top: 40px;
   }
 }

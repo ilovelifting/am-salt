@@ -73,9 +73,7 @@ function StatCard({
 
   return (
     <div className={styles.card}>
-      <div className={styles.reading}>
-        Reading {String(index + 1).padStart(2, "0")} / 03
-      </div>
+      <div className={styles.reading}>{stat.label}</div>
       <div className={styles.stat}>{display}</div>
       <div className={styles.body}>{stat.body}</div>
     </div>

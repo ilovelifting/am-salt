@@ -1,16 +1,13 @@
 export const steps = [
   {
-    n: "01",
     title: "Don’t reach for the kettle yet.",
     body: "Fill 16 oz of cold water. The coffee maker can wait ninety seconds — it's not going anywhere.",
   },
   {
-    n: "02",
     title: "One stick. Thirty seconds.",
     body: "Dissolves clear. It's flavored — but you'll still taste the salt underneath. That's kind of the point.",
   },
   {
-    n: "03",
     title: "Then coffee.",
     body: "Now it actually works — sharp, not wired.",
   },
@@ -46,6 +43,8 @@ export const flavors = [
 ] as const;
 
 export type ScienceStat = {
+  /** Names what the number is, in place of a "01 / 03" counter. */
+  label: string;
   stat: string;
   body: string;
   refIndex: number;
@@ -53,16 +52,19 @@ export type ScienceStat = {
 
 export const scienceStats: ScienceStat[] = [
   {
+    label: "The threshold",
     stat: "1–2%",
     body: "That's how little water loss it takes to measurably slow down your attention span. You lose more than this overnight, every night, for free.",
     refIndex: 1,
   },
   {
+    label: "The gap",
     stat: "8 hrs",
     body: "How long you went without a sip of water while unconscious. Your body kept losing it anyway — breathing, skin, no exceptions for being asleep.",
     refIndex: 2,
   },
   {
+    label: "The fix",
     stat: "Salt",
     body: "The part that makes the water actually absorb — into circulation, into your brain — instead of running straight through you. This is what turns awake into alert.",
     refIndex: 3,

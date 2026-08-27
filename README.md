@@ -40,6 +40,20 @@ Open [http://localhost:3000](http://localhost:3000).
 - `lib/rate-limit.ts` — in-memory per-IP rate limiter for the preorder action
 - `lib/site.ts` — the site's canonical URL and support inbox, used for metadata/robots/sitemap/contact
 
+## Design conventions
+
+- **No numbered sections.** Don't label steps, stats or cards with counters
+  (`01`, `02 / 06`, "Reading 01 / 03"). Where a marker is needed, use the
+  orange dot the Process steps and Benefits cards share, or a descriptive
+  label — the science stats read "The threshold / The gap / The fix".
+- **Light only.** There is no dark theme and none is planned. `globals.css`
+  sets `color-scheme: only light` so browser form controls stay light too.
+  State colours outright rather than making them theme-reactive.
+- **Orange is for buying.** `--energy` is reserved for primary CTAs (and
+  the dot markers above). Blue carries links, eyebrows and structure.
+- **Contrast is checked, not eyeballed.** Every text pairing clears WCAG AA.
+  White on orange can't — that's why CTAs carry dark ink (`--on-energy`).
+
 ## Before this goes fully live
 
 Everything below is a real gap, not hypothetical — read this before pointing real traffic at it.
