@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "You know the first hour — the one you spend waiting to feel like yourself. Water and electrolytes before the caffeine. No jolt, no crash, just a morning that starts when you do.",
+      "It isn’t the first hour you lose — it’s the whole day spent catching up. Water and electrolytes before the caffeine, so you start level instead of behind. No jolt, no crash.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "You know the first hour — the one you spend waiting to feel like yourself. Water and electrolytes before the caffeine. No jolt, no crash, just a morning that starts when you do.",
+      "It isn’t the first hour you lose — it’s the whole day spent catching up. Water and electrolytes before the caffeine, so you start level instead of behind. No jolt, no crash.",
   },
 };
 

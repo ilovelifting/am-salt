@@ -56,7 +56,7 @@ export function Footer() {
       </div>
       <div className={styles.bottom}>
         <div>© {new Date().getFullYear()} AM Salt</div>
-        <div>Made for the first hour, not the whole day.</div>
+        <div>Made for the first hour. Built for the rest of the day.</div>
       </div>
     </footer>
   );

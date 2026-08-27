@@ -6,9 +6,9 @@ export type Benefit = {
 
 export const benefits: Benefit[] = [
   {
-    id: "sharper-first-hour",
-    title: "A sharper first hour",
-    body: "Your brain runs on water it doesn't have yet. Losing just 1–2% of your body's water is enough to dull focus and flatten your mood — and you lose more than that every night, just by sleeping. Rehydrate with sodium before anything else, and you get that sharpness back before the coffee even brews.",
+    id: "sharper-start",
+    title: "A sharper start that actually holds",
+    body: "Your brain runs on water it doesn't have yet. Losing just 1–2% of your body's water is enough to dull focus and flatten your mood — and you lose more than that every night, just by sleeping. Rehydrate with sodium before anything else and you get that sharpness back before the coffee even brews. Then you spend the rest of the day topped up, instead of chasing a deficit you woke up with.",
   },
   {
     id: "actually-absorbed",

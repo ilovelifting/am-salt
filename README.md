@@ -1,6 +1,6 @@
 # AM Salt
 
-Morning electrolyte packet, positioned around the "before coffee" first hour. Next.js (App Router) implementation of the Claude Design mockup, plus a working preorder capture flow to gauge demand.
+Morning electrolyte packet, positioned around the "before coffee" first hour and the day it sets up. Next.js (App Router) implementation of the Claude Design mockup, plus a working preorder capture flow to gauge demand.
 
 ## Stack
 

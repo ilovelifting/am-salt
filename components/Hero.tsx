@@ -15,21 +15,22 @@ export function Hero() {
         </h1>
         <div className={styles.body}>
           <p className={styles.lede}>
-            You know the first hour. The one you spend waiting to feel like
-            yourself.
+            It isn&rsquo;t the first hour you lose. It&rsquo;s everything
+            downstream of it &mdash; the focus, the patience, the whole day
+            spent catching up on water you gave away overnight.
           </p>
           <p className={styles.lede}>
-            This is the fix for that hour. Water and electrolytes before
-            the caffeine &mdash; no jolt, no crash, no waiting until eleven
-            to feel human. Just a morning that starts when you do.
+            Water and electrolytes before the caffeine, so you start level
+            instead of behind. No jolt. No crash. No four o&rsquo;clock
+            where you&rsquo;re running on fumes and a third coffee.
           </p>
           <p className={styles.kicker}>
-            One stick. One glass. One better first hour.
+            One stick. One glass. A day that doesn&rsquo;t fall behind.
           </p>
         </div>
         <div className={styles.ctaRow}>
           <a href="#preorder" className={styles.primaryCta}>
-            Fix Your First Hour
+            Start The Day Ahead
           </a>
           <a href="#panel" className={styles.secondaryCta}>
             See the exact formula
