@@ -26,11 +26,15 @@
   --energy: #ff8524;
   --energy-hover: #f26f0a;
   --energy-edge: #d4600a;
+  /* Pin the label colour rather than reusing --ink: if a dark theme is
+     ever added, --ink flips light and would leave white-on-orange. */
+  --on-energy: #0f1a2e;
 
   /* Yellow: highlight fill behind ink text (11.3:1). --sun-edge rings the
      status dot so it clears 3:1 against the near-white page. */
   --sun: #ffc93c;
   --sun-edge: #b87f00;
+  --on-sun: #0f1a2e;
 
   /* Light-blue panel — hero art backdrop and the ingredient panel */
   --panel-bg: #e8f0fe;

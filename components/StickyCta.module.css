@@ -54,7 +54,7 @@
 .cta {
   flex: none;
   background: var(--energy);
-  color: var(--ink);
+  color: var(--on-energy);
   border: 1px solid var(--energy-edge);
   padding: 12px 25px;
   font-size: 15px;
@@ -67,7 +67,7 @@
 
 .cta:hover {
   background: var(--energy-hover);
-  color: var(--ink);
+  color: var(--on-energy);
 }
 
 @media (max-width: 560px) {

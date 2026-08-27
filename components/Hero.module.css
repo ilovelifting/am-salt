@@ -45,6 +45,7 @@
    stay the most readable thing on the page rather than the least. */
 .hl {
   background: var(--sun);
+  color: var(--on-sun);
   padding: 0 0.08em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
@@ -68,7 +69,7 @@
 
 .primaryCta {
   background: var(--energy);
-  color: var(--ink);
+  color: var(--on-energy);
   border: 1px solid var(--energy-edge);
   padding: 18px 35px;
   font-size: 16px;
@@ -80,7 +81,7 @@
 
 .primaryCta:hover {
   background: var(--energy-hover);
-  color: var(--ink);
+  color: var(--on-energy);
 }
 
 .secondaryCta {

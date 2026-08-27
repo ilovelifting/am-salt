@@ -70,7 +70,7 @@
 .productCtaButton {
   flex: none;
   background: var(--energy);
-  color: var(--ink);
+  color: var(--on-energy);
   border: 1px solid var(--energy-edge);
   padding: 14px 25px;
   font-size: 15px;
@@ -82,7 +82,7 @@
 
 .productCtaButton:hover {
   background: var(--energy-hover);
-  color: var(--ink);
+  color: var(--on-energy);
 }
 
 @media (max-width: 900px) {

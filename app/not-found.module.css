@@ -38,7 +38,7 @@
 .cta {
   margin-top: 10px;
   background: var(--energy);
-  color: var(--ink);
+  color: var(--on-energy);
   border: 1px solid var(--energy-edge);
   padding: 16px 31px;
   font-size: 16px;
@@ -52,7 +52,7 @@
 
 .cta:hover {
   background: var(--energy-hover);
-  color: var(--ink);
+  color: var(--on-energy);
 }
 
 @media (max-width: 900px) {
