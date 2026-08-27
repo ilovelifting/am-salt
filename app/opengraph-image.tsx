@@ -51,15 +51,15 @@ export default async function Image() {
             display: "flex",
             flexDirection: "column",
             color: "#0F1A2E",
-            fontSize: 74,
+            fontSize: 64,
             fontWeight: 800,
-            lineHeight: 1.08,
+            lineHeight: 1.1,
             letterSpacing: -2,
-            maxWidth: 980,
+            maxWidth: 1010,
           }}
         >
-          <div style={{ display: "flex" }}>You&rsquo;re not tired.</div>
-          <div style={{ display: "flex" }}>You&rsquo;re dry.</div>
+          <div style={{ display: "flex" }}>Your morning tiredness now</div>
+          <div style={{ display: "flex" }}>has a sixteen-ounce fix.</div>
         </div>
 
         <div

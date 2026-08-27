@@ -7,25 +7,32 @@ export function Hero() {
       <div className={styles.copy}>
         <div className={styles.eyebrow}>
           <span className={styles.dot} />
-          Status: dehydrated
+          Overnight rehydration
         </div>
         <h1 className={styles.h1}>
-          You&rsquo;re not tired.
-          <br />
-          You&rsquo;re <span className={styles.hl}>dry</span>.
+          Your morning tiredness now has a{" "}
+          <span className={styles.hl}>sixteen-ounce fix</span>.
         </h1>
-        <p className={styles.lede}>
-          Eight hours without a sip leaves you down water and short on
-          sodium. It feels exactly like being tired, so that&rsquo;s what
-          you blame it on. One stick, sixteen ounces, before the coffee
-          &mdash; and you get the first hour of your day back.
-        </p>
+        <div className={styles.body}>
+          <p className={styles.lede}>
+            After eight hours without water, your body can start the day
+            behind.
+          </p>
+          <p className={styles.lede}>
+            Mix one stick into 16 ounces when you wake up to rehydrate with
+            water and electrolytes before coffee&mdash;so you can feel like
+            yourself sooner.
+          </p>
+          <p className={styles.kicker}>
+            One stick. One glass. One better first hour.
+          </p>
+        </div>
         <div className={styles.ctaRow}>
           <a href="#preorder" className={styles.primaryCta}>
-            Wake up alert
+            Fix Your First Hour
           </a>
-          <a href="#science" className={styles.secondaryCta}>
-            See the proof
+          <a href="#panel" className={styles.secondaryCta}>
+            See the exact formula
           </a>
         </div>
         <div className={styles.tags}>

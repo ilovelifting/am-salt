@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "You're not tired. You're dry. One stick, sixteen ounces, before the coffee — and you get the first hour of your day back.",
+      "After eight hours without water, your body can start the day behind. One stick in 16 ounces before coffee — so you can feel like yourself sooner.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "You're not tired. You're dry. One stick, sixteen ounces, before the coffee — and you get the first hour of your day back.",
+      "After eight hours without water, your body can start the day behind. One stick in 16 ounces before coffee — so you can feel like yourself sooner.",
   },
 };
 
