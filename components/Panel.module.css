@@ -1,6 +1,6 @@
 .section {
-  background: var(--navy);
-  color: var(--bg);
+  background: var(--panel-bg);
+  color: var(--ink);
   padding: 100px 48px;
 }
 
@@ -22,7 +22,7 @@
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--navy-dim);
+  color: var(--accent);
 }
 
 .h2 {
@@ -37,17 +37,17 @@
   margin: 0;
   font-size: 18px;
   line-height: 1.55;
-  color: var(--navy-soft);
+  color: var(--ink-soft);
   max-width: 42ch;
 }
 
 .note {
   margin: 0;
   padding-left: 18px;
-  border-left: 2px solid rgba(247, 247, 245, 0.24);
+  border-left: 2px solid var(--panel-line);
   font-size: 14px;
   line-height: 1.6;
-  color: var(--navy-dim);
+  color: var(--panel-muted);
   max-width: 40ch;
 }
 
@@ -62,23 +62,25 @@
   justify-content: space-between;
   gap: 20px;
   padding: 20px 0;
-  border-top: 1px solid rgba(247, 247, 245, 0.16);
+  border-top: 1px solid var(--panel-line);
 }
 
 .name {
   font-size: 19px;
   font-weight: 500;
+  color: var(--ink);
 }
 
 .dots {
   flex: 1;
-  border-bottom: 1px dotted rgba(247, 247, 245, 0.24);
+  border-bottom: 1px dotted var(--panel-line);
 }
 
 .amount {
   font-family: var(--font-mono);
   font-size: 15px;
-  color: var(--bg);
+  color: var(--navy);
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {

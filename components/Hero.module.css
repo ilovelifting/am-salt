@@ -96,7 +96,7 @@
 }
 
 .art {
-  background: var(--navy);
+  background: var(--panel-bg);
   display: flex;
   align-items: center;
   justify-content: center;

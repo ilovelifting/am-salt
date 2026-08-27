@@ -9,6 +9,7 @@ import { Preorder } from "@/components/Preorder";
 import { Faq } from "@/components/Faq";
 import { JournalTeaser } from "@/components/journal/JournalTeaser";
 import { Footer } from "@/components/Footer";
+import { StickyCta } from "@/components/StickyCta";
 import { ProductSchema } from "@/components/seo/ProductSchema";
 import { getPreorderCount } from "@/lib/preorders";
 import styles from "./page.module.css";
@@ -34,6 +35,7 @@ export default async function Home() {
       <Faq />
       <JournalTeaser />
       <Footer />
+      <StickyCta />
     </main>
   );
 }

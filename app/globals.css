@@ -9,8 +9,12 @@
   --accent: #1f4fd8;
   --accent-hover: #12123a;
   --navy: #12123a;
-  --navy-soft: #c6c6e4;
-  --navy-dim: #8e8ee0;
+
+  /* Light-blue accent panel — used for the hero art backdrop and the
+     ingredient panel, instead of the old dark-navy fill. */
+  --panel-bg: #e3ebfc;
+  --panel-line: rgba(18, 18, 58, 0.14);
+  --panel-muted: #4a5980;
 
   --font-sans: var(--font-archivo), Helvetica, Arial, sans-serif;
   --font-mono: var(--font-plex-mono), "SFMono-Regular", Consolas, monospace;
