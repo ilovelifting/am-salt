@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "Tear one open, sixteen ounces of water, drink it before you touch the coffee. Sodium, potassium and magnesium put back what eight hours of sleep took out of you. No jolt, no crash.",
+      "Drink one and the fog lifts before the coffee is done brewing. You get your head back at seven and still have it at four — no jolt, no crash, no third cup to get there.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "AM Salt — Not a wellness blend. Just salt.",
     description:
-      "Tear one open, sixteen ounces of water, drink it before you touch the coffee. Sodium, potassium and magnesium put back what eight hours of sleep took out of you. No jolt, no crash.",
+      "Drink one and the fog lifts before the coffee is done brewing. You get your head back at seven and still have it at four — no jolt, no crash, no third cup to get there.",
   },
 };
 

@@ -15,14 +15,13 @@ export function Hero() {
         </h1>
         <div className={styles.body}>
           <p className={styles.lede}>
-            Tear one open. Sixteen ounces of water. Drink it before you
-            touch the coffee.
+            Drink one and the fog lifts before the coffee is done brewing.
           </p>
           <p className={styles.lede}>
-            Sodium, potassium and magnesium put back what eight hours of
-            sleep took out of you. No jolt, no crash, no four o&rsquo;clock
-            running on fumes and a third coffee &mdash; just a day that
-            starts level and stays there.
+            You get your head back at seven and still have it at four. No
+            jolt, no crash, no third cup to get there &mdash; just sodium,
+            potassium and magnesium putting back what eight hours of sleep
+            took out of you.
           </p>
           <p className={styles.kicker}>
             One stick. One glass. A day that doesn&rsquo;t fall behind.

@@ -54,6 +54,17 @@ Open [http://localhost:3000](http://localhost:3000).
 - **Contrast is checked, not eyeballed.** Every text pairing clears WCAG AA.
   White on orange can't — that's why CTAs carry dark ink (`--on-energy`).
 
+## Copy conventions
+
+- **Sell the outcome, not the work.** Lead with what the reader gets, never
+  with what they have to do. "Tear one open, sixteen ounces of water, drink
+  it before the coffee" is the work; "drink one and the fog lifts before the
+  coffee is done brewing" is the outcome. Mechanism — the minerals, the
+  timing, the dose — earns a trailing beat once the payoff has landed. The
+  Process section is the one exception: it exists to explain the steps.
+- **The first hour is the lever, the day is the prize.** Copy shouldn't cap
+  the benefit at the morning.
+
 ## Before this goes fully live
 
 Everything below is a real gap, not hypothetical — read this before pointing real traffic at it.
